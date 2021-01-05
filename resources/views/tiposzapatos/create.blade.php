@@ -7,10 +7,10 @@
                 <div class="title m-b-md">
                 </div>
 @section( 'content')
-<h2 class="text-center mb-5">AGREGAR NUEVO CLIENTE</h2>
+<h2 class="text-center mb-5">AGREGAR NUEVO </h2>
 <div class="col-md-8">
 <form method="POST"action="{{route('tiposzapatos.store')}}">
-
+@csrf
 <div class="form-group">
 <label form="nombre">Nombres</label>
 <input type="text" name="nombre"class="form-control" id="name"placeholder="Nombres"/>

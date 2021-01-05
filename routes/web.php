@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 Route::get('/tiposzapatos',' VentanaController@index')->name('tiposzapatos.index');
 Route::get('/tiposzapatos/create', 'VentanaController@create')->name('tiposzapatos.create');
-
+Route::post('/tiposzapatos','VentanaController@store')->name('tiposzapatos.store');
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
